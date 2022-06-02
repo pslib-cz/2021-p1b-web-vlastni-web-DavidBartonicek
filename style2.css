@@ -1,0 +1,77 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.vzhled{
+    background: url(obrazky/ammo-bck.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.navbar{
+    
+    height:  120px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.navbar ul li{
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+    line-height: 80px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+
+}
+.navbar ul li.active,
+.navbar ul li:hover{
+    background: rgba(162, 107, 11, 0.318);
+    border-radius: 50px;
+}
+.trida1{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    
+    
+}
+.trida1 h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+
+
+}
+.trida1 h2{
+    font-size: 70px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    width: 950px;
+    text-align: center;
+    
+}
