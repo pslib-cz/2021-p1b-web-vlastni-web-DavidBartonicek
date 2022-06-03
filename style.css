@@ -9,23 +9,46 @@
 
 
 .vzhled{
-    background: url(obrazky/238126.jpg)no-repeat;
+    background: url(obrazky/firearms-background.jpg)no-repeat;
     background-size: cover;
     height: 100vh;
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    background-color: black;
 }
 
+
+.famoushandguns{
+    font-family: poppins;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
 
 .navbar{
     
     height:  120px;
     width: 100%;
     background: rgba(0, 0, 0, 0.626);
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.navbar ul{
+.kategorie{
     float: right;
-    margin-right: 20px;
+}
 
+.homebutton{
+    float: left;
 }
 .navbar ul li{
     list-style: none;
@@ -76,7 +99,8 @@
     
 }
 .nadpis{
-    margin-top: 50px;
+    text-size-adjust: auto;
+    margin-top: 150px;
     text-align: center;
     font-family: poppins;
     color: white;
@@ -106,10 +130,11 @@
     padding-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
-    background: rgba(0, 0, 0, 0.626);
+    background: rgba(49, 49, 49, 0.45);
     padding-bottom: 20px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    border: 1px white;
 }
 .obdelnik h2{
     font-family: poppins;
@@ -128,6 +153,14 @@
     
 
 }
-html{
-    background-color: black;
+.obrazek2{
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.nadpisobrazek{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
 }
