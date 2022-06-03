@@ -1,17 +1,153 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
 *{
     padding: 0;
     margin: 0;
 
 }
+
+
 .vzhled{
-    background: url(obrazky/sunset-1373171.jpg)no-repeat;
+    background: url(obrazky/238126.jpg)no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
+    min-height: 100%; 
+
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 .navbar{
+    
     height:  120px;
     width: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.626);
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.navbar ul li{
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+    line-height: 80px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+
+}
+.navbar ul li.active{
+    background: rgba(162, 107, 11, 0.318);
+    border-radius: 50px;
+}
+.navbar ul li:hover{
+    background: rgba(162, 107, 11, 0.318);
+    border-radius: 50px;
+    
+    
+     
+
+    
+}
+
+
+
+    
+
+.trida1{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    
+    
+}
+.trida1 h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+
+
+}
+.trida1 h2{
+    font-size: 70px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    width: 950px;
+    text-align: center;
+    
+}
+.nadpis{
+    margin-top: 50px;
+    text-align: center;
+    font-family: poppins;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.podnadpis{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: poppins;
+    color: white;
+    font-size: 18px;
+    
+
+
+}
+
+.podnadpis p{
+    margin-top: 40px;
+    margin-right: 20px;
+    
+}
+
+.obdelnik{
+    
+    padding-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background: rgba(0, 0, 0, 0.626);
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.obdelnik h2{
+    font-family: poppins;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.podnadpis{
+    display: flex;
+    
+}
+.obrazek{
+    max-height: 600px;
+    max-width: 600px;
+    margin-bottom: 50px;
+    
+
+}
+html{
+    background-color: black;
 }
