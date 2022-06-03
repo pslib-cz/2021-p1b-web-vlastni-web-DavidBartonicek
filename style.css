@@ -11,8 +11,8 @@
 .vzhled{
     background: url(obrazky/238126.jpg)no-repeat;
     background-size: cover;
-    height: 100vh;
-    min-height: 500px; 
+    height: 100%;
+    min-height: 100%; 
 
   
     background-attachment: fixed;
@@ -44,17 +44,30 @@
 .navbar ul li a{
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
     padding: 6px 13px;
     font-family: 'Roboto', sans-serif;
     transition: .4s;
 
 }
-.navbar ul li.active,
-.navbar ul li:hover{
+.navbar ul li.active{
     background: rgba(162, 107, 11, 0.318);
     border-radius: 50px;
 }
+.navbar ul li:hover{
+    background: rgba(162, 107, 11, 0.318);
+    border-radius: 50px;
+    
+    
+     
+
+    
+}
+
+
+
+    
+
 .trida1{
     position: absolute;
     top: 38%;
