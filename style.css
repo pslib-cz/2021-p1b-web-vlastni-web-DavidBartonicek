@@ -9,10 +9,10 @@
 
 
 .vzhled{
-    background: url(obrazky/firearms-background.jpg)no-repeat;
-    background-size: cover;
+    
+    
     height: 100vh;
-    min-height: 100vh;
+    min-height: 100%;
 
     background-attachment: fixed;
     background-position: center;
@@ -21,6 +21,11 @@
 }
 html{
     background-color: black;
+    background: url(obrazky/firearms-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -32,7 +37,8 @@ html{
 }
 
 .navbar{
-    
+    z-index: 9999;
+    backdrop-filter: blur(10px);
     height:  120px;
     width: 100%;
     background: rgba(0, 0, 0, 0.626);
@@ -58,6 +64,7 @@ html{
 
 }
 .navbar ul li a{
+    position: relative;
     text-decoration: none;
     color: white;
     font-size: 35px;
@@ -65,12 +72,35 @@ html{
     font-family: 'Roboto', sans-serif;
     transition: .4s;
     font-family: poppins;
+    margin-right: 20px;
 
 }
-.navbar ul li.active,
-.navbar ul li:hover{
-    background: rgba(162, 107, 11, 0.318);
-    border-radius: 50px;
+.navbar ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background: white;
+    transition: 0.4s ease-out;
+
+
+}
+.navbar ul li a:hover::after{
+    left: 0;
+    width: 100%;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+
 }
 .trida1{
     position: absolute;
@@ -127,7 +157,8 @@ html{
 }
 
 .obdelnik{
-    
+
+    backdrop-filter: blur(5px);
     padding-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
@@ -135,7 +166,7 @@ html{
     padding-bottom: 20px;
     margin-top: 40px;
     margin-bottom: 60px;
-    border: 1px white;
+    border-radius: 4px;
 }
 .obdelnik h2{
     font-family: poppins;
