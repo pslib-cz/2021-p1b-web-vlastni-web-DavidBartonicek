@@ -192,6 +192,24 @@ html{
     margin-top: 40px;
     margin-bottom: 60px;
     border-radius: 4px;
+    transition: 0.5s;
+}
+.obdelnik:hover{
+    backdrop-filter: blur(5px);
+    padding-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background: rgba(59, 59, 59, 0.45);
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    
+    transform: scale(1.05);
+    transition: 0.5s;
+    
+    
+
 }
 .obdelnik h2{
     font-family: poppins;
